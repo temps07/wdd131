@@ -6,40 +6,49 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Temple Ohanu</title>
     <meta name="description" content="Temple Ohanu's WDD 131 - Dynamic Web Fundamentals home page">
     <meta name="author" content="Temple Ohanu">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span style="color:black">Temple V. Ohanu</span></h1>
         <nav>
             <a href="linkdin.com">linkdln</a>
-            <a href="https://byupw.instructure.com">Rafting Website</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="https://byupw.instructure.com">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/12?lang=eng">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
+        <section class="card1">
+            <h3>About Me</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt corporis saepe nemo modi magni praesentium beatae officiis architecto id obcaecati earum, a quam harum sunt fugiat enim, voluptas qui, voluptatum minus adipisci maxime at aliquid. Sapiente officiis id corporis aut neque non, tenetur eos laudantium, nulla voluptatum sequi beatae! Quae neque excepturi quas.</p>
-            <img src="images/" alt="A photo of me">
+            <img src="images/profile.jpg" alt="A photo of me" style= "height: 250px;">
             <h2>Lagos, Nigeria</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo vero eligendi nemo ea enim beatae esse neque officia consequuntur. Ullam vel officia eligendi dolore voluptates, iste dolor, aspernatur dolorem eveniet facere voluptatibus temporibus fugiat tenetur obcaecati quam recusandae, atque assumenda. Hic pariatur sit voluptate, explicabo expedita ipsum beatae perspiciatis nostrum. Deleniti, nih</p>
-            <img src="images/nigeriaFlag.png" alt="Nigeria Flag">
+            <figure>
+                <img src="images/nigeriaFlag.png" alt="Nigeria Flag">
+                <figcaption>Official Flag of Nigeria</figcaption>
+            </figure>
         </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
+        <section class="card2">
+            <h3>Web Dev Resources</h3>
             <nav>
-                <a href="w3schools.com">w3schools</a>
-                <a href="https://byupw.instructure.com">Rafting Website</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-                <a href="#">Final Project</a>
+                <ul>
+                    <li><a href="w3schools.com">w3schools</a></li>
+                    <li><a href="https://codepen.io">Code Pen</a></li>
+                    <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+                    <li><a href="https://www.codecademy.com">Codecademy</a></li>
+                    <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+                </ul>
             </nav>
         </section>
     </main>
     <footer>
-        <p><span id="curentyear">©2024 </span> 🌴Temple Victor Ohanu🌴 Nigeria</p>
+        <p> <span id="currentyear"></span> 🌴Temple Victor Ohanu🌴 Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 </body>
