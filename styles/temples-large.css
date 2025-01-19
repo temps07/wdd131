@@ -24,4 +24,7 @@
     #menu {
         display: none;
     }
+    main {
+        max-width:fit-content;
+    }
 }
