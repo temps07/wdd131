@@ -1,0 +1,27 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation{
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    nav a {
+        display: block;
+
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(4, 400px);
+        grid-template-rows: repeat(3, 400px);
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+}

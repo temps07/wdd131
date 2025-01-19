@@ -5,3 +5,10 @@ document.getElementById("currentyear").textContent = `©${currentYear}`;
 // Get the last modified date of the document and set it in the paragraph with id "lastModified"
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `LastModified: ${lastModified}`;
+
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
+});
