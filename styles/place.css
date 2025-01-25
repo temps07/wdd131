@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+header {
+    background-color: rgb(30, 219, 30);
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 5px;
+}
+.weather {
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(30, 219, 30);
+}
+#lastModified {
+    color: rgb(3, 3, 182);
+}

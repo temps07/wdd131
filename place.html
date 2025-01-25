@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Responsive Image - Temple Ohanu</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Brazil</h1>
+</header>
+<main>  
+    <div class="mainContent">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+            <img src="images/hero-small.webp" alt="Hero Image" width="1300" height="900">
+        </picture>
+    </div>
+    <div class="data">
+        <h2>Data</h2>
+        <p><strong>Area</strong>: 8.51 million km²</p> 
+        <p><strong>Population</strong>: 216.4 million</p>
+        <p><strong>Capital</strong>: Brasilia</p>
+        <p><strong>Languages</strong>: Portuguese</p>
+        <p><strong>Currency</strong>: Brazilian Real</p>
+        <p><strong>Time Zone</strong>: GMT-3</p>
+        <p><strong>Calling Code</strong>: +55</p>
+        <p><strong>Internet TLD</strong>: .br</p>
+    </div>
+    <div class="weather">
+        <h2 class="heading">Weather</h2>
+        <picture>
+            <source srcset="images/weather.png" media="(max-width: 500px)"> 
+            <img src="images/weather.png" alt="Weather Icon">
+        </picture>
+        <p><strong>Temperature</strong>: 5℃</p>
+        <p><strong>Conditions</strong>: Partly Cloudly</p>
+        <p><strong>Wind</strong>: 20km/h</p>
+        <p><strong>Wind Chill</strong>: <span id="windchill"></span></p>
+    </div>
+
+</main>
+<footer>
+    <p id="copy"> <span id="currentyear"></span> 🌴Temple Victor Ohanu🌴 Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>

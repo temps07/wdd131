@@ -1,0 +1,62 @@
+@media screen and (min-width: 500px) {
+
+    body {
+        font-family: "Roboto", serif;
+        font-weight: 400;
+    }
+    
+    h1 {
+        text-align: center;
+        padding: 15px;
+        background-color: rgb(30, 219, 30);
+    }
+    p {
+        padding: 0 20px 0 50px;
+        margin: 20px 0 20px 0;
+    }
+    .mainContent {
+        position: relative;
+    }
+    .mainContent img {
+        width: 100%;
+        height: auto;
+
+    }
+    .weather {
+        position: absolute;
+        top: 45em;
+        right: 3em;
+        background-color: rgba(255, 255, 255, 0.521);
+    }
+    .data {
+        position: absolute;
+        top: 8em;
+        left: 2em;
+        background-color: rgba(255, 255, 255, 0.521);
+        
+    }
+    h2 {
+        background-color: rgb(255, 255, 0);
+        padding: 10px;
+        margin-right: 20px;
+    }
+    footer {
+        text-align: center;
+        background-color: rgb(30, 219, 30);
+    }
+    #lastModified {
+        color: rgb(3, 3, 182);
+        margin: 0;
+        padding: 10px;
+    }
+    #copyright {
+        margin: 0;
+        padding: 10px;
+    }
+    main {
+        background-color: blue;
+    }
+    .heading::after {
+        content: " ⛅";
+    }
+}
