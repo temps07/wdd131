@@ -1,6 +1,6 @@
 @media screen and (min-width: 500px) {
 
-    body {
+    :root {
         font-family: "Roboto", serif;
         font-weight: 400;
     }
@@ -24,7 +24,7 @@
     }
     .weather {
         position: absolute;
-        top: 45em;
+        top: 30em;
         right: 3em;
         background-color: rgba(255, 255, 255, 0.521);
     }
