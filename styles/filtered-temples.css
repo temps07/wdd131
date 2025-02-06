@@ -1,0 +1,88 @@
+header {
+    color: white;
+    background-color: purple;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+h2 {
+  text-align: center;
+}
+img {
+    height: 350px;
+}
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+/* Show nav when hamburger button is clicked */
+.show-nav {
+  display: block;
+}
+
+#menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    right: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.navigation-menu-item {
+    padding: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    cursor: pointer;
+} 
+.navigation-menu-item:hover{
+  color: #000;
+  background-color: #eee;
+  text-decoration: underline double;
+}
+  .navigation-menu-item:last-child {
+    border-bottom: none;
+  }
+  
+.temple-card {
+  background-color: #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main {
+  max-width: 500px;
+}
