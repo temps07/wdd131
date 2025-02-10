@@ -60,7 +60,7 @@ input, button, select, textarea {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 1.2rem;
 	padding: .2rem;
-	width: 50px;
+	width: 500px;
 }
 input[type="checkbox"]
 {
@@ -91,6 +91,6 @@ div{
 		max-width: 500px;
 	}
 	input, button, select, textarea {
-		width: 500px;
+		width: 50px;
 	}
 }	
