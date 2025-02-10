@@ -1,0 +1,87 @@
+ 
+.rating {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+    flex-direction: row-reverse;
+}
+.rating > label {
+  color: gold;
+  width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+  
+.rating > label:hover {
+	color: #000;
+}
+
+.rating > label::before {
+	content: "\2606";
+}
+
+.rating input:checked ~ label::before {
+	content: "\2605";
+}
+.rating input[type="radio"] {
+    display: none;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+form {
+	width: auto;
+	margin: 0 auto;
+	padding: 2rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+	background-color: rgba(128, 128, 128, 0.068);
+	display: grid;
+}
+header, footer {
+	background-color:  rgb(5, 5, 170);
+	text-align: center;
+	color: white;
+}
+main {
+	background-color: rgba(128, 128, 128, 0.068);
+}
+label, p {
+	display: block;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2rem;
+}
+input, button, select, textarea {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2rem;
+	padding: .2rem;
+	width: 35rem;
+}
+input[type="checkbox"]
+{
+	width: 25px;
+	height: 19px;
+}
+button {
+	margin: 10px 10px 10px 0px;
+	background-color: rgb(5, 5, 170);
+	color: white;
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 7px;
+	height: 4rem;
+}
+button:hover {
+	background-color: darkgreen;
+}
+.rating {
+	margin: .1px;
+}
+div{
+	padding: 5px;
+	margin: 2px;
+}

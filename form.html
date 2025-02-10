@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Product Review - Temple Ohanu</title>
+    <meta name="description" content="Temple Ohanu's WDD 131 - Product Review home page">
+    <meta name="author" content="Temple Ohanu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -11,12 +18,51 @@
     </header>
     <main>
         <form method="get" action="review.html">
-              <label>Product Name <input type="text" name="productname" required></label>
-              
+            <div>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product......</option>
+                </select>
             </div>
+            <p>Overall Rating</p>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1"></label>
+            </div>
+            <div>
+                <label for="completedDate"> Date of Installation</label>
+                <input type="date" id="completedDate" name="completedDate" required>
+            </div>
+            <div>
+                <label>Which features did you find useful in the product? <br> <em>(Check all that apply)</em></label>
+                <label><input type="checkbox" name="durability" value="3">Durability</label>
+                <label><input type="checkbox" name="ease" value="2">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="1">Performance</label>
+                <label><input type="checkbox" name="design" value="1">Design</label>
+            </div>
+            <div>
+            <label for="review">Written Review <span style="color: blue">(optional)</span></label>
+            <textarea name="review" id="review" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="fullname">Your Name <span style="color: blue">(optional)</span></label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <button type="submit">Post Review</button>
         </form>
     </main>
     <footer>
+        <p> <span id="currentyear"></span> 🌴Temple Victor Ohanu🌴 Nigeria</p>
+        <p id="lastModified"></p>
+        <p id="review-count"></p>
 
     </footer>
 </body>
