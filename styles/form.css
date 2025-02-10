@@ -91,6 +91,6 @@ div{
 		max-width: 500px;
 	}
 	input, button, select, textarea {
-		width: 50px;
+		width: 300px;
 	}
 }	
