@@ -46,6 +46,7 @@ header, footer {
 	background-color:  rgb(5, 5, 170);
 	text-align: center;
 	color: white;
+	height: 70px;
 }
 main {
 	background-color: rgba(128, 128, 128, 0.068);
@@ -88,5 +89,8 @@ div{
 @media screen and (max-width: 500px) {
 	*{
 		max-width: 500px;
+	}
+	input, button, select, textarea {
+		width: 500px;
 	}
 }	
