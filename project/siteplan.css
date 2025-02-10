@@ -1,48 +1,152 @@
-/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #F5F5F5;
-    color: #333333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFF8F0; /* Soft Peach */
+  color: #4A4A4A; /* Dark Gray */
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: #FFF8F0; /* Soft Peach */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #FF6F61; /* Coral */
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #FF6F61; /* Coral */
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FF6F61;
+}
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #FFF8F0;
+  border: 1px solid #FFD166; 
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #FF6F61; 
+  margin-bottom: 10px;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-bottom: 15px;
+}
+
+/* .recipe-card button {
+  background-color: #FF6F61;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-card button:hover {
+  background-color: #FFD166;
+} */
+footer {
+  background-color: #4A4A4A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+ 
+footer .social-icons a {
+  color: #FFD166; 
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #FF6F61; 
+}
+
+.special-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #FF6F61;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
   }
-  
-  h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #4CAF50;
+
+  nav ul {
+    flex-direction: column;
   }
-  
-  a {
-    color: #FFC107;
-    text-decoration: none;
+
+  nav ul li {
+    margin: 10px 0;
   }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+
+  section h2 {
+    font-size: 20px;
   }
-  
-  button:hover {
-    background-color: #45a049;
+
+  .special-heading {
+    font-size: 24px;
   }
-  
-  .recipe-card, .plan-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-  
-  footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+}
