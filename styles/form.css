@@ -85,3 +85,8 @@ div{
 	padding: 5px;
 	margin: 2px;
 }
+@media screen and (max-width: 500px) {
+	main{
+		max-width: 500px;
+	}
+}	
