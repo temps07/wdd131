@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 - Recipes - Sweet & Savory</title>
+    <meta name="description" content="Explore easy and delicious recipes for busy students.">
+    <meta name="author" content="Temple Ohanu">
+    <link rel="stylesheet" href="siteplan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sweet & Savory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="special-heading">Recipes</h2>
+        <section id="recipe-filters">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="dessert">Dessert</option>
+            </select>
+        </section>
+        <section id="recipe-list">
+            <!-- Recipes will be dynamically loaded here -->
+        </section>
+        <section id="favorite-recipes">
+            <h3>Your Favorites</h3>
+            <ul>
+                <!-- Favorite recipes will be dynamically loaded here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sweet & Savory. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">&#x1F4F7;</a>
+            <a href="#">&#x1F4F1;</a>
+        </div>
+    </footer>
+    <script src="recipes.js"></script>
+</body>
+</html>

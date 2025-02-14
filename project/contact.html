@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 - Contact - Sweet & Savory</title>
+    <meta name="description" content="Get in touch with Sweet & Savory.">
+    <meta name="author" content="Temple Ohanu">
+    <link rel="stylesheet" href="siteplan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sweet & Savory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="special-heading">Contact Us</h2>
+        <section id="contact-form">
+            <form id="messageForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="message-list">
+            <h3>Your Messages</h3>
+            <ul>
+                <!-- Messages will be dynamically loaded here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sweet & Savory. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">&#x1F4F7;</a>
+            <a href="#">&#x1F4F1;</a>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>
